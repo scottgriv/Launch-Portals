@@ -42,8 +42,8 @@ const CardGrid = () => {
   return (
     <div style={{
       padding: '1rem',
-      backgroundColor: '#4167CF',
-      border: '2px solid #FFFFFF',
+      backgroundColor: '', // '#4167CF',
+      border: '2px solid #FE9C59',
       borderRadius: '10px',
       maxWidth: '1200px',
       margin: '0 auto',
@@ -60,7 +60,7 @@ const CardGrid = () => {
               background: "black",
               color: "white",
               padding: "0",
-              border: '2px solid #FFFFFF',
+              border: '2px solid #FE9C59',
               borderRadius: "10px",
               display: "flex",
               flexDirection: "column",
