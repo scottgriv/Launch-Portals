@@ -8,7 +8,11 @@ const CardGrid = () => {
         edges {
           node {
             frontmatter {
-              url
+              type
+              order
+              link
+              text
+              photo
             }
             id
           }
@@ -20,29 +24,66 @@ const CardGrid = () => {
   const [metadata, setMetadata] = useState({});
 
   useEffect(() => {
-    const fetchMetadata = async (url) => {
-      const response = await fetch(`https://api.microlink.io/?url=${encodeURIComponent(url)}&meta`);
+    const fetchMetadata = async (link) => {
+      const response = await fetch(`https://api.microlink.io/?url=${encodeURIComponent(link)}&meta`);
       const data = await response.json();
       return data.data;
     };
 
     data.allMarkdownRemark.edges.forEach(async ({ node }) => {
-      const meta = await fetchMetadata(node.frontmatter.url);
-      setMetadata((prevMetadata) => ({
-        ...prevMetadata,
-        [node.id]: meta,
-      }));
+      if (node.frontmatter.type === 'link') {
+        const meta = await fetchMetadata(node.frontmatter.link);
+        setMetadata((prevMetadata) => ({
+          ...prevMetadata,
+          [node.id]: meta,
+        }));
+      }
     });
   }, [data.allMarkdownRemark.edges]);
 
-  const handleCardClick = (url) => {
-    window.open(url, '_blank');
+  const handleCardClick = (type, link) => {
+    if (type === 'link') {
+      window.open(link, '_blank');
+    }
+  };
+
+  const renderCardContent = (node) => {
+    switch (node.frontmatter.type) {
+      case 'text':
+        return (
+          <div style={{ padding: "20px" }}> {/* Add padding for text type cards */}
+            <p>{node.frontmatter.text}</p>
+          </div>
+        );
+      case 'link':
+        return metadata[node.id] ? (
+          <>
+            <img
+              src={metadata[node.id].image?.url || 'default-placeholder.jpg'}
+              alt={`Preview of ${metadata[node.id].title || 'Website'}`}
+              style={{
+                display: "block",
+                width: "100%",
+                height: "auto",
+              }}
+            />
+            <div style={{ padding: "10px" }}>
+              <h2 style={{ margin: "10px 0 0 0" }}>{metadata[node.id].title || 'No Title Available'}</h2>
+              <p style={{ margin: "5px 0" }}>{metadata[node.id].description || 'No description available.'}</p>
+            </div>
+          </>
+        ) : <p>Loading metadata...</p>;
+      case 'photo':
+        return <img src={node.frontmatter.photo} alt="Photo" style={{ width: "100%", height: "auto" }} />;
+      default:
+        return <p>Unsupported content type.</p>;
+    }
   };
 
   return (
     <div style={{
       padding: '1rem',
-      backgroundColor: '', // '#4167CF',
+      backgroundColor: '', // Set your desired background color
       border: '2px solid #FE9C59',
       borderRadius: '10px',
       maxWidth: '1200px',
@@ -60,51 +101,18 @@ const CardGrid = () => {
               background: "black",
               color: "white",
               padding: "0",
-              border: '2px solid #FE9C59',
               borderRadius: "10px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
-              cursor: "pointer",
-              overflow: "hidden", // Ensures the image fits perfectly without overflowing
+              cursor: node.frontmatter.type === 'link' ? "pointer" : "default", // Only make it a pointer for link types
+              overflow: "hidden",
             }}
-            onClick={() => handleCardClick(node.frontmatter.url)}
+            onClick={() => handleCardClick(node.frontmatter.type, node.frontmatter.link)}
             role="button"
             tabIndex={0}
-            onKeyPress={(e) => e.key === 'Enter' && handleCardClick(node.frontmatter.url)}
           >
-            {metadata[node.id] ? (
-              <>
-                <img
-                  src={metadata[node.id].image?.url || 'default-placeholder.jpg'}
-                  alt={`Preview of ${metadata[node.id].title || 'Website'}`}
-                  style={{
-                    display: "block", // Removes any extra space below the image
-                    width: "100%", // Ensures the image is flush with the card edges
-                    height: "auto",
-                    //borderBottom: "1px solid white", // Optional: adds a subtle separator
-                  }}
-                />
-                <div style={{
-                  padding: "10px", // Tightens the text section to the image
-                }}>
-                  <h2 style={{margin: "10px 0 0 0"}}>{metadata[node.id].title || 'No Title Available'}</h2>
-                  <p style={{margin: "5px 0"}}>{metadata[node.id].description || 'No description available.'}</p>
-                  {/* Displaying the URL as plain text */}
-                  <p style={{
-                    color: "black",
-                    fontSize: "0.8rem",
-                    marginTop: "5px",
-                    textAlign: "left",
-                    overflowWrap: 'break-word',
-                  }}>
-                    {node.frontmatter.url}
-                  </p>
-                </div>
-              </>
-            ) : (
-              <p>Loading metadata...</p>
-            )}
+            {renderCardContent(node)}
           </div>
         ))}
       </div>
