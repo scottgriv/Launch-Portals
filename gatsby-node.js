@@ -10,7 +10,9 @@ exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               type
               order
-              content
+              link
+              text
+              photo
             }
             id
           }

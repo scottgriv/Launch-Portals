@@ -72,7 +72,7 @@ const CardGrid = () => {
               <p style={{ margin: "5px 0" }}>{metadata[node.id].description || 'No description available.'}</p>
             </div>
           </>
-        ) : <p>Loading metadata...</p>;
+        ) : <p>Loading Portal...</p>;
       case 'photo':
         return <img src={node.frontmatter.photo} alt="Photo" style={{ width: "100%", height: "auto" }} />;
       default:
@@ -86,12 +86,12 @@ const CardGrid = () => {
       backgroundColor: '', // Set your desired background color
       border: '2px solid #FE9C59',
       borderRadius: '10px',
-      maxWidth: '1200px',
+      maxWidth: '1000px',
       margin: '0 auto',
     }}>
       <div style={{
         display: "grid",
-        gridTemplateColumns: "repeat(2, 1fr)",
+        gridTemplateColumns: "repeat(3, 1fr)",
         gap: "10px",
       }}>
         {data.allMarkdownRemark.edges.map(({ node }) => (

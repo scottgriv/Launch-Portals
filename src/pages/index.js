@@ -3,7 +3,7 @@ import CardGrid from "../components/CardGrid" // Adjust the path based on your f
 
 const IndexPage = () => (
   <main>
-    <title>Launch Portal</title>
+    <title>Launch Portals</title>
     <CardGrid />
   </main>
 )

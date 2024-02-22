@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Launch Portal`,
+    title: `Launch Portals`,
     description: `A portal for launching awesome apps.`,
     author: `@yourhandle`, // Update with your information
     siteUrl: `https://yourwebsite.com`, // Update with your site URL
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Launch Portal`,
+        name: `Launch Portals`,
         short_name: `LaunchPortal`,
         start_url: `/`,
         background_color: `#000000`,
