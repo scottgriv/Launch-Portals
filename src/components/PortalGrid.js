@@ -42,7 +42,7 @@ const PortalGrid = () => {
     const fetchMetadataNetlify = async (link) => {
       // This would make a call to your Netlify function
       try {
-        const response = await fetch(`/api/fetchMetadata?url=${encodeURIComponent(link)}`);
+        const response = await fetch(`/.netlify/functions/fetchMetadata?url=${encodeURIComponent(url)}`);
         const data = await response.json();
         return data;
       } catch (error) {
