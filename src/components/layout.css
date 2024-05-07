@@ -1,3 +1,12 @@
+/* Import Roboto font */
+/* Regular style */
+@font-face {
+  font-family: "Anta";
+  src: url("/fonts/Anta/Anta-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --border-radius: 4px;
   --color-text: #333;
@@ -33,13 +42,14 @@ html {
   line-height: var(--line-height-normal);
   overflow-y: scroll;
 }
+
 body {
+  font-family: "Anta", Arial, sans-serif; /* Use custom font */
+  font-weight: 400; /* This will use the regular font */
+  font-size: 20px; /* Set default font size */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
-  font-family: sans-serif;
-  font-family: var(--font-sans);
-  font-weight: normal;
   margin: 0;
   word-wrap: break-word;
 }
@@ -72,7 +82,6 @@ dfn {
 }
 h1 {
   margin: 0;
-  margin-bottom: 3rem;
   padding: 0;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
@@ -221,4 +230,21 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+/* Add this in your CSS file */
+.loading-text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .loading-text {
+      font-size: 16px;
+  }
+
+  body {
+    font-size: 10px; /* Set default font size */
+  }
 }

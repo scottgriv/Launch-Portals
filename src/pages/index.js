@@ -1,10 +1,10 @@
 import React from "react"
-import CardGrid from "../components/CardGrid" // Adjust the path based on your file structure
+import PortalGrid from "../components/PortalGrid" // Adjust the path based on your file structure
 
 const IndexPage = () => (
   <main>
     <title>Launch Portals</title>
-    <CardGrid />
+    <PortalGrid />
   </main>
 )
 

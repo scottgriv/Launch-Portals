@@ -13,6 +13,8 @@ exports.createPages = async ({ graphql, actions }) => {
               link
               text
               photo
+              vportals
+              hportals
             }
             id
           }
@@ -25,18 +27,18 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors;
   }
 
-  // Define a template for your cards.
-  const cardTemplate = path.resolve(`./src/templates/cardTemplate.js`);
+  // Define a template for your portals.
+  const portalTemplate = path.resolve(`./src/templates/portalTemplate.js`);
 
   // Iterate through each node to create pages.
   result.data.allMarkdownRemark.edges.forEach((edge, index) => {
     // Use the node's order and ID to create a more generic path if name is not available.
     // Alternatively, consider generating a slug or ID from the URL or another unique piece of data.
-    const path = `/card/${edge.node.frontmatter.order}-${edge.node.id}`;
+    const path = `/portal/${edge.node.frontmatter.order}-${edge.node.id}`;
 
     createPage({
       path: path,
-      component: cardTemplate,
+      component: portalTemplate,
       context: {
         id: edge.node.id,
       },
