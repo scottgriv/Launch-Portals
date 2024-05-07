@@ -1,5 +1,5 @@
 ---
-type: photo
+type: link
 order: 15
-photo: '/images/icon_cs.png'
+link: https://launchportals.netlify.app/
 ---
