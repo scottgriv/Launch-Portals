@@ -1,3 +1,11 @@
+html, html * {
+  cursor: url('/images/rocket-cursor.png'), auto;
+}
 body {
   background-color: #110C77;
+}
+@media (max-width: 600px) {
+  body {
+    background-color: #FA6400;
+  }
 }

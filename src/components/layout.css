@@ -123,17 +123,23 @@ hr {
   box-sizing: inherit;
 }
 hgroup,
-img,
 figure,
 fieldset,
 ul,
 ol,
 dl,
-dd,
-p {
+dd {
   margin: 0;
   padding: 0;
   margin-bottom: var(--space-4);
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 10px;
 }
 ul,
 ol {
@@ -186,7 +192,7 @@ li > p {
   margin-bottom: calc(var(--space-4) / 2);
 }
 p {
-  max-width: 680px;
+  max-width: 1000px;
 }
 code {
   font-size: 0.875rem;
@@ -237,8 +243,9 @@ pre tt:after {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  padding: 20px;
+  margin-bottom: 20px;
 }
+
 @media (max-width: 600px) {
   .loading-text {
       font-size: 16px;
@@ -246,5 +253,31 @@ pre tt:after {
 
   body {
     font-size: 10px; /* Set default font size */
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* default gap for larger devices */
+}
+
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* larger gap for mobile devices */
+  }
+}
+
+.animation-container {
+  position: relative;
+  height: 40vh;
+}
+
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+  .animation-container {
+    position: relative;
+    height: 20vh;
   }
 }
