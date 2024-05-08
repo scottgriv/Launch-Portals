@@ -25,23 +25,28 @@ const PortalGrid = () => {
     }
   `);
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(undefined);
   const [metadata, setMetadata] = useState({});
   const [loading, setLoading] = useState(true);
   const [loadingText, setLoadingText] = useState('Loading Portal...');
   const [loadingImage, setLoadingImage] = useState('/images/loading_portal.png');
 
-     useEffect(() => {
-       const handleResize = () => {
-         setWindowWidth(window.innerWidth);
-       };
-   
-       window.addEventListener('resize', handleResize);
-   
-       return () => {
-         window.removeEventListener('resize', handleResize);
-       };
-     }, []);
+  useEffect(() => {
+    // Function to handle resizing
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Set width initially once the component mounts
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up event listener
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
