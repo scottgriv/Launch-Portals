@@ -1,5 +1,4 @@
-/* Import Roboto font */
-/* Regular style */
+/* Import Anta font */
 @font-face {
   font-family: "Anta";
   src: url("/fonts/Anta/Anta-Regular.ttf") format("truetype");
@@ -44,9 +43,9 @@ html {
 }
 
 body {
-  font-family: "Anta", Arial, sans-serif; /* Use custom font */
-  font-weight: 400; /* This will use the regular font */
-  font-size: 20px; /* Set default font size */
+  font-family: "Anta", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
@@ -237,7 +236,7 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
-/* Add this in your CSS file */
+
 .loading-text {
   color: white;
   font-weight: bold;
@@ -252,30 +251,32 @@ pre tt:after {
   }
 
   body {
-    font-size: 10px; /* Set default font size */
+    font-size: 10px;
   }
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* default gap for larger devices */
+  gap: 20px;
 }
 
-@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+@media (max-width: 600px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px; /* larger gap for mobile devices */
+    gap: 10px;
   }
 }
+
+/* Animation Container Styles */
 
 .animation-container {
   position: relative;
   height: 40vh;
 }
 
-@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+@media (max-width: 600px) {
   .animation-container {
     position: relative;
     height: 20vh;

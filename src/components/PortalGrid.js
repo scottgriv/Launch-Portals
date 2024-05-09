@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { CONFIG } from './config';
-import './PortalStyles.css'
+import './animations/AnimationStyles.css'
 
 const PortalGrid = () => {
   const data = useStaticQuery(graphql`
