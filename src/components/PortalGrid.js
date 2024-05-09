@@ -210,19 +210,19 @@ const PortalGrid = () => {
             </div>
           );
 
-          case 'animation':
-            return (
-              <div style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                height: "100%",
-                background: "black",
-                padding: 0,
-                margin: 0,
-              }}>
-                
+          case 'custom':
+          return (
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "100%",
+              height: "100%",
+              background: "black",
+              padding: 0,
+              margin: 0,
+            }}>
+              {node.frontmatter.order === 7 ? (
                 <div className="animation-container">
                   <div></div>
                   <div></div>
@@ -230,9 +230,36 @@ const PortalGrid = () => {
                   <div></div>
                   <div></div>
                 </div>
-                
+              ) : node.frontmatter.order === 8 ? (
+                <a href="https://logwork.com/current-time-in-new-york-united-states" 
+                   className="clock-widget-text" 
+                   data-timezone="America/New_York" 
+                   data-language="en" 
+                   data-textcolor="#949494" 
+                   data-background="#000000" 
+                   data-digitscolor="#ffffff">
+                  New York, United States, New York
+                </a>
+              ) : (
+                <div style={{
+                  width: "100%",
+                  height: "100%",
+                  background: "black",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center"
+                }}>
+                  <img src="/images/failed_portal.png" alt="Portal Not Found" style={{
+                    width: "50%",
+                    height: "auto",
+                    objectFit: "contain",
+                    marginTop: "10px",
+                  }} />
+                  <p className="loading-text">Portal Not Found</p>
+                </div>              )}
             </div>
-            );
+          );
 
         default:
           return (

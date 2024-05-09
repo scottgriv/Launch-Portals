@@ -1,4 +1,4 @@
 ---
-type: animation
+type: custom
 order: 7
 ---
