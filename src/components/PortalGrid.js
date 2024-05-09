@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { CONFIG } from './config';
-import './animations/AnimationStyles.css'
+import PortalAnimation from './custom/PortalAnimation'; // Adjust path as necessary
+import ClockWidget from './custom/ClockWidget'; // Adjust path as necessary
 
 const PortalGrid = () => {
   const data = useStaticQuery(graphql`
@@ -15,6 +16,7 @@ const PortalGrid = () => {
               link
               text
               photo
+              custom
               vportals
               hportals
             }
@@ -222,24 +224,10 @@ const PortalGrid = () => {
               padding: 0,
               margin: 0,
             }}>
-              {node.frontmatter.order === 7 ? (
-                <div className="animation-container">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              ) : node.frontmatter.order === 8 ? (
-                <a href="https://logwork.com/current-time-in-new-york-united-states" 
-                   className="clock-widget-text" 
-                   data-timezone="America/New_York" 
-                   data-language="en" 
-                   data-textcolor="#949494" 
-                   data-background="#000000" 
-                   data-digitscolor="#ffffff">
-                  New York, United States, New York
-                </a>
+              {node.frontmatter.custom === "animation" ? (
+                <PortalAnimation />
+              ) : node.frontmatter.custom === "clock" ? (
+                <ClockWidget />
               ) : (
                 <div style={{
                   width: "100%",

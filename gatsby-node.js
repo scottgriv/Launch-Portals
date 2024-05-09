@@ -13,6 +13,7 @@ exports.createPages = async ({ graphql, actions }) => {
               link
               text
               photo
+              custom
               vportals
               hportals
             }
