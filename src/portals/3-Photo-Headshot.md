@@ -1,5 +1,5 @@
 ---
 type: photo
-order: 3
+order: 4
 photo: '/images/me.jpg'
 ---

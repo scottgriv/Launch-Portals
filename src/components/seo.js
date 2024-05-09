@@ -28,7 +28,7 @@ function Seo({ description, title, children }) {
 
   return (
     <>
-      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <title>{defaultTitle ? `${defaultTitle}` : title}</title>
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,6 +45,10 @@ function Seo({ description, title, children }) {
       <meta name="twitter:image" content="/images/banner_social.png" />
       <meta name="msapplication-TileColor" content="#FA6400" />
       <meta name="theme-color" content="#FA6400" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
       {children}
     </>
   )
