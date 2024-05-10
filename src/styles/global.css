@@ -1,11 +1,33 @@
+:root {
+  --main-bg-color: #000000; /* #110C77 */
+  --accent-color: #FA6400; /* #FA6400 */
+  --portal-icon-color: #000000;
+  --file-download-color: #FFFFFF;
+  --file-download-icon-color: #E02020;
+  --link-color: #007bff;
+  --background-image: url('/images/background.png'); /* Background image behind the portals */
+  --cursor-image: url('/images/rocket-cursor.png'); /* Cursor image on Desktop App */
+  --placeholder-image: url('/images/placeholder_portal.png'); /* Portal placeholder image */
+}
+
+/* Import Anta font */
+@font-face {
+  font-family: "Anta";
+  src: url("/fonts/Anta/Anta-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 html, html * {
-  cursor: url('/images/rocket-cursor.png'), auto;
+  cursor: var(--cursor-image), auto;
 }
+
 body {
-  background-color: #110C77;
+  background-color: var(--main-bg-color);
 }
+
 @media (max-width: 600px) {
   body {
-    background-color: #FA6400;
+    background-color: var(--accent-color);
   }
 }

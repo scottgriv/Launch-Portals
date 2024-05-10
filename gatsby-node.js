@@ -4,15 +4,18 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }) {
+      allMarkdownRemark(sort: {frontmatter: {order: ASC}}) {
         edges {
           node {
             frontmatter {
               type
               order
-              link
               text
+              markdown
               photo
+              file
+              fileTitle
+              link
               custom
               vportals
               hportals
@@ -45,4 +48,29 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+};
+
+// This function is responsible for customizing the GraphQL schema
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter {
+      type: String
+      order: Int
+      text: String
+      markdown: String
+      photo: String
+      file: String
+      fileTitle : String
+      link: String
+      custom: String
+      vportals: Int
+      hportals: Int
+    }
+
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+  `;
+  createTypes(typeDefs);
 };

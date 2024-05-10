@@ -38,9 +38,9 @@ export const query = graphql`
       html
       frontmatter {
         type
-        link
         text
         photo
+        link
       }
     }
   }

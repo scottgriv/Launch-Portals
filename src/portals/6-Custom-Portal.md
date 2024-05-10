@@ -1,5 +1,5 @@
 ---
 type: custom
-order: 7
+order: 6
 custom: animation
 ---

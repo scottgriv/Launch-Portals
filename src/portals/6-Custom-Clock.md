@@ -1,5 +1,5 @@
 ---
 type: custom
-order: 8
+order: 6
 custom: clock
 ---
