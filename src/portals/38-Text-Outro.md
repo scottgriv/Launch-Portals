@@ -1,7 +1,0 @@
----
-type: text
-order: 38
-text: '<i class="fa-brands fa-github fa-bounce"></i> <a href="https://github.com/scottgriv/Launch-Portals" target="_blank" style="color: var(--link-color); text-decoration: none;">Visit the official Launch Portals repository on GitHub</a> to learn more and how you can build and showcase your own Portals. Watch your step on the way out!'
-vportals: 1
-hportals: 3
----
