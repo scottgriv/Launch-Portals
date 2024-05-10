@@ -282,3 +282,38 @@ pre tt:after {
     height: 20vh;
   }
 }
+
+.portal-icon-container {
+  background: #FA6400;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.portal-icon {
+  color: black;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .portal-icon-container {
+    background: #FA6400;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  .portal-icon {
+    color: black;
+    font-size: 10px;
+  }
+}

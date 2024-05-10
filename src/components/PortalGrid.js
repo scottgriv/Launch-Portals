@@ -127,6 +127,22 @@ const PortalGrid = () => {
     return text.substr(0, text.lastIndexOf(' ', maxLength)) + '...';
   };
 
+  const getIconForType = (type) => {
+
+    switch (type) {
+      case 'text':
+        return <i className="portal-icon fa-solid fa-font"></i>; // Example icon for text
+      case 'photo':
+        return <i className="portal-icon fa-solid fa-image"></i>; // Example icon for photo
+      case 'link':
+        return <i className="portal-icon fa-solid fa-link"></i>; // Example icon for link
+      case 'custom':
+        return <i className="portal-icon fa-solid fa-star"></i>; // Example icon for custom
+      default:
+        return <i className="portal-icon fa-solid fa-circle-question"></i>; // Fallback icon
+    }
+  };
+  
   
   const renderPortalContent = (node) => {
     //console.log("Photo path:", node.frontmatter.photo); // Log the photo path
@@ -156,26 +172,45 @@ const PortalGrid = () => {
               width: "100%",
               height: "100%",
               background: "black",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between", // This will space out the top and bottom parts
             }}>
-              <img
-                src={metadata[node.id].image?.url || '/images/placeholder_portal.png'}
-                alt={`Preview of ${metadata[node.id].title || 'Website'}`}
-                style={{
-                  display: "block",
-                  width: "100%",
-                  height: "auto",
-                }}
-              />
-              <div style={{ padding: "10px" }}>
-                <h2 style={{ margin: "5px 0 0 0" }}>{truncatedTitle}</h2>
-                <p style={{ margin: "5px 0" }}>{metadata[node.id].description || 'No description available.'}</p>
+              <div>
+                <img
+                  src={metadata[node.id].image?.url || '/images/placeholder_portal.png'}
+                  alt={`Preview of ${metadata[node.id].title || 'Website'}`}
+                  onError={(e) => {
+                    if (!e.target.src.endsWith('/images/placeholder_portal.png')) { 
+                      e.target.src = '/images/placeholder_portal.png';
+                    }
+                  }}
+                  style={{
+                    display: "block",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+                <div style={{ padding: "10px" }}>
+                  <h2 style={{ margin: "5px 0 0 0" }}>{truncatedTitle}</h2>
+                  <p style={{ margin: "5px 0" }}>{metadata[node.id].description || 'No Description Available.'}</p>
+                </div>
+              </div>
+              <div style={{ textAlign: 'left', 
+              padding: '10px',
+              whiteSpace: 'nowrap', 
+              overflow: 'hidden', 
+              textOverflow: 'ellipsis' }}>
+                <a href={node.frontmatter.link} target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'none' }}>
+                  {node.frontmatter.link}
+                </a>
               </div>
             </div>
           ) : (
             <div style={{
               width: "100%",
               height: "100%",
-              background: "black",  // Ensure background is black
+              background: "black",  
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -190,6 +225,7 @@ const PortalGrid = () => {
               <p className="loading-text">{loadingText}</p>
             </div>
           );
+        
         
         case 'photo':
           return (
@@ -245,7 +281,8 @@ const PortalGrid = () => {
                     marginTop: "10px",
                   }} />
                   <p className="loading-text">Portal Not Found</p>
-                </div>              )}
+                </div>              
+              )}
             </div>
           );
 
@@ -320,6 +357,10 @@ const PortalGrid = () => {
               role="button"
               tabIndex={0}
             >
+            {CONFIG.showPortalIcons && ( 
+              <div className="portal-icon-container">
+                {getIconForType(node.frontmatter.type)}</div>
+            )}
               {renderPortalContent(node)}
             </div>
           );
