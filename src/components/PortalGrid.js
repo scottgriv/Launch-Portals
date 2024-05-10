@@ -184,7 +184,7 @@ const PortalGrid = () => {
               justifyContent: "center",
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               padding: "20px",
               margin: 0,
             }}
@@ -203,7 +203,7 @@ const PortalGrid = () => {
               justifyContent: "center",
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               padding: "20px",
             }}
           >
@@ -222,7 +222,7 @@ const PortalGrid = () => {
               justifyContent: "center",
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               padding: 0,
               margin: 0,
             }}
@@ -243,7 +243,7 @@ const PortalGrid = () => {
             style={{
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -277,7 +277,7 @@ const PortalGrid = () => {
               justifyContent: "center",
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               padding: "20px",
             }}
           >
@@ -289,10 +289,10 @@ const PortalGrid = () => {
               href={node.frontmatter.file}
               download
               style={{
-                color: "var(--file-download-color)",
+                color: "var(--file-download-button-color)",
                 textDecoration: "none",
                 padding: "10px",
-                border: "1px solid var(--file-download-color)",
+                border: "1px solid var(--file-download-button-color)",
                 borderRadius: "5px",
                 fontSize: "16px",
               }}
@@ -327,7 +327,7 @@ const PortalGrid = () => {
             style={{
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between", // This will space out the top and bottom parts
@@ -380,7 +380,7 @@ const PortalGrid = () => {
             style={{
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -410,7 +410,7 @@ const PortalGrid = () => {
               justifyContent: "center",
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               padding: 0,
               margin: 0,
             }}
@@ -424,7 +424,7 @@ const PortalGrid = () => {
                 style={{
                   width: "100%",
                   height: "100%",
-                  background: "black",
+                  background: "var(--portal-background-color)",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
@@ -453,7 +453,7 @@ const PortalGrid = () => {
             style={{
               width: "100%",
               height: "100%",
-              background: "black",
+              background: "var(--portal-background-color)",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",

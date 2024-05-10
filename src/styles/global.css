@@ -1,13 +1,16 @@
 :root {
-  --main-bg-color: #000000; /* #110C77 */
-  --accent-color: #FA6400; /* #FA6400 */
-  --portal-icon-color: #000000;
-  --file-download-color: #FFFFFF;
-  --file-download-icon-color: #E02020;
-  --link-color: #007bff;
+  --main-bg-color: #000000; /* Main background color */
+  --main-bg-color-alt: #110C77; /* Alternative main background color */
+  --accent-color: #FA6400; /* Portal borders and accents */
+  --portal-background-color: #040624; /* Portal background color */
+  --portal-icon-color: #000000; /* Icon for the Portal type in the upper left hand corner of each portal */
+  --scroll-arrow-background-color: #E02020; /* Scroll button background color */
+  --scroll-arrow-color: #FFFFFF; /* Scroll button arrow color */
+  --file-download-button-color: #FFFFFF; /* File Portal Type download button border and text color */
+  --file-download-icon-color: #E02020; /* File Portal Type icon color */
+  --link-color: #007bff; /* Hyperlink color */
   --background-image: url('/images/background.png'); /* Background image behind the portals */
   --cursor-image: url('/images/rocket-cursor.png'); /* Cursor image on Desktop App */
-  --placeholder-image: url('/images/placeholder_portal.png'); /* Portal placeholder image */
 }
 
 /* Import Anta font */

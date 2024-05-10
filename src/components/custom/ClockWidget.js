@@ -23,8 +23,8 @@ const ClockWidget = () => {
          data-timezone="America/New_York" 
          data-language="en" 
          data-textcolor="#949494" 
-         data-background="#000000" 
-         data-digitscolor="#ffffff">
+         data-background="var(--portal-background-color)" 
+         data-digitscolor="#FFFFFF">
         New York, United States, New York
       </a>
     </div>
