@@ -214,11 +214,29 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 
 Regarding `#1` above, `type`, there are 5 different **Portal** types you can utilize.
 
+<img src="./docs/images/portal_types/font-solid.svg" style="width: 5%;"/>
+
 1. **text** - display text or `HTML`.
+
+<img src="./docs/images/portal_types/markdown.svg" style="width: 5%;"/>
+
 2. **markdown** - display `markdown`.
+
+<img src="./docs/images/portal_types/image-solid.svg" style="width: 5%;"/>
+
 3. **photo** - display an `image`.
+
+<img src="./docs/images/portal_types/file-solid.svg" style="width: 5%;"/>
+
 4. **file** - host a downloadable file.
+
+<img src="./docs/images/portal_types/star-solid.svg" style="width: 5%;"/>
+
 5. **custom** - use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file.
+
+<img src="./docs/images/portal_types/circle-question-solid.svg" style="width: 5%;"/>
+
+6. **unknown** - this is not an actual type, but a placeholder will be used if a valid type is not found above.
 
 > [!WARNING] 
 > Be sure to add the **keyword** you used inside of the **custom** tag above inside the `switch` statement.
