@@ -68,7 +68,7 @@ const IndexPage = () => {
 }
 
 export const Head = () => (
-  <Seo title="Launch Portals" description="Launch Portals is a dynamic web application designed for developers, marketers, and project managers to showcase and monitor their digital projects." />
+  <Seo title="Launch Portals" description="🚀 Portals for launching a showcase of your best work." />
 )
 
 export default IndexPage;
