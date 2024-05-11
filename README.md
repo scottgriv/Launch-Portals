@@ -288,6 +288,8 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 - [Microlink API - Rate Limits](https://microlink.io/docs/api/basics/rate-limit) - Documentation on the usage limits of the Microlink API.
 - [Meta Tags: What They Are & How to Use Them for SEO](https://www.semrush.com/blog/meta-tag/) - Meta Tag for SEO Guide.
 - [SEO Basics: How to Do SEO for Beginners](https://www.semrush.com/blog/seo-basics) - Search Engine Optimization Guide.
+- [LogWork - Time and Clock Widgets](https://logwork.com/current-time#) - Free Time and Clock Widgets using LogWork (currently being used for a `custom` portal in the app demo).
+- [LogWork - Free Tools](https://logwork.com/free-tools/) - Free Widgets and Themes for Your Website or Blog using LogWork.
 
 ## License
 
