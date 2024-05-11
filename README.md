@@ -32,16 +32,17 @@ Feel free to Fork this repo and make it your own. Add **Portal** cards with text
 
 <div align="center">
     <a href="https://launchportals.netlify.app/" target="_blank">
-        <img src="./docs/images/demo.gif" style="width: 60%;"/>
+        <img src="./docs/images/demo_1.png" style="width: 35%;"/>
+        <br>
+        <img src="./docs/images/demo_2.png" style="width: 35%;"/>
     </a>
     <br>
     <i>Fully customizable "Portals".</i>
 </div>
 <br>
-
 <div align="center">
     <a href="https://launchportals.netlify.app/" target="_blank">
-        <img src="./docs/images/error_demo.gif" style="width: 60%;"/>
+        <img src="./docs/images/error_demo.gif" style="width: 35%;"/>
     </a>
     <br>
     <i>Error handling if content cannot be rendered.</i>
@@ -158,6 +159,7 @@ Below is a list of the main files you can customize to your liking:
 11. `static/files` - place your files for your **file** portal types here.
 12. `static/images` - place your images for your **photo** portal types here.
 13. `netlify/functions/fetchMetadata.js` - server side function for requesting site metadata using [Microlink API](https://microlink.io/).
+13. `netlify.toml` - used to setup the Netlify directory above for the server side.
 14. In the root directory, you can also edit the `gatsby-config.js` file to change the site metadata, colors, titles, and other information.
 
 ## Portals
