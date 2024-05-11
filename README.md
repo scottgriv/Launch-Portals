@@ -26,7 +26,7 @@ Launch Portals is a dynamic web application designed for developers, marketers, 
 
 Users can easily ensure that their projects are presented correctly across platforms by checking Open Graph tags and other metadata in real-time. Whether you're launching a new app or managing an existing portfolio, Launch Portals helps you maintain control over how your projects appear to the world, enhancing visibility and consistency across the web.
 
-Feel free to Fork this repo and make it your own. Add **Portal** cards with text (with HTML), markdown, photos, files, or links to your work. Expand the columns how you see fit, vertically and horizontally. The sky is the limit with Launch Portals!
+Feel free to Fork this repo and make it your own. Add **Portal** cards with plaintext (and/or HTML), markdown, photos, files, or links to your work. Expand the columns how you see fit, vertically and horizontally. The sky is the limit with Launch Portals!
 
 - Visit the application to see it in action [here](https://https://launchportals.netlify.app/).
 
@@ -77,6 +77,7 @@ Feel free to Fork this repo and make it your own. Add **Portal** cards with text
 - [x] Fully customizable
 - [x] Mobile friendly
 - [x] Easy navigation
+- [x] Quick to get up and running with your own variation
 - [x] Up arrow for easy page scrolling
 - [x] Free to host and deploy using Netlify and GitHub
 
@@ -124,6 +125,7 @@ I wanted to create a website that showcased my projects without adding my produc
 8. Click `Deploy Site`
 9. View your website at `https://<your-site-name>.netlify.app`
 10. Optionally, you can also setup a custom domain name for your website
+11. If you plan on deploying to Netlify, you can optionally download [Netlify CLI](https://docs.netlify.com/cli/get-started/) to run Netlify functions on your local to ensure proper integration come deployment time.
 
 ### Configuration
 
@@ -215,31 +217,38 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 Regarding `#1` above, `type`, there are **6** different **Portal** types you can utilize.
 - Place the type you want to use in `type` query parameter.
 
-<img src="./docs/images/portal_types/font-solid.svg" style="width: 5%;"/>
+<img src="./docs/images/portal_types/text-type-white#gh-dark-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
 1. **text** - display text or `HTML`.
 
-<img src="./docs/images/portal_types/markdown.svg" style="width: 5%;"/>
+<img src="./docs/images/portal_types/markdown-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/markdown-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
 2. **markdown** - display `markdown`.
 
-<img src="./docs/images/portal_types/image-solid.svg" style="width: 5%;"/>
+<img src="./docs/images/portal_types/image-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/image-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
 3. **photo** - display an `image`.
 
-<img src="./docs/images/portal_types/file-solid.svg" style="width: 5%;"/>
+<img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
 4. **file** - host a downloadable file.
 
-<img src="./docs/images/portal_types/link-solid.svg" style="width: 5%;"/>
+<img src="./docs/images/portal_types/link-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/link-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
 5. **link** - link to an external website or project.
 
-<img src="./docs/images/portal_types/star-solid.svg" style="width: 5%;"/>
+<img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
 6. **custom** - use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file.
 
-<img src="./docs/images/portal_types/circle-question-solid.svg" style="width: 5%;"/>
+<img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
 7. **unknown** - this is not an actual type, but a placeholder will be used if a valid type is not found above.
 
@@ -258,12 +267,6 @@ Regarding `#1` above, `type`, there are **6** different **Portal** types you can
 > [!NOTE]
 > Each **Portal** type has an icon indicator associated with it, located in the upper left hand corner of each **Portal**.
 > You can disable this indicator by setting `showPortalIcons` to `false` in the `config.js` file if you do not want to display it.
-
-## General Information
-
-> [!NOTE]
-> I used [Microlink API](https://microlink.io/) to pull the `meta` tags from my websites into structured data to be displayed in each **Portal**.
-> Because the free tier is subject to a soft limit of [50 unauthenticated requests a day](https://microlink.io/docs/api/basics/rate-limit), I decided to use Netlify functions to cache the data server side. If you're testing on local, I cache it in the browser. So be sure to set `localTesting` to `true` if you're developing on your local, otherwise it should be set to `false` for Netlify depoloyment. 
 
 ## Closing
 
@@ -301,6 +304,7 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 - [Gatsby](https://www.gatsbyjs.com/) - A framework for building static websites and web applications using React.
 - [Gatsby - SEO Component](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/) - A guide for adding SEO optimizations to Gatsby projects.
 - [Netlify](https://www.netlify.com/) - A platform for hosting static sites with automatic deployment from Git repositories.
+- [Netlify CLI](https://docs.netlify.com/cli/get-started/) - Netlify’s command line interface (CLI) lets you configure continuous deployment straight from the command line. You can use Netlify CLI to run a local development server that you can share with others, run a local build and plugins, and deploy your site.
 - [React](https://reactjs.org/) - A JavaScript library for building dynamic user interfaces.
 - [Font Awesome](https://fontawesome.com/) - A toolkit for web icons and social logos, customizable via CSS.
 - [Meta Tags](https://metatags.io/) - A tool for previewing and generating meta tags for better SEO and social media sharing.
@@ -312,7 +316,6 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 ## License
 
 This project is released under the terms of the **GNU General Public License, version 3 (GPLv3)**.
-
 - The GPLv3 is a "copyleft" license, ensuring that derivatives of the software remain open source and under the GPL.
 - For more details and to understand all requirements and conditions, see the [LICENSE](LICENSE) file in this repository.
 
