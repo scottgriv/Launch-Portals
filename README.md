@@ -220,35 +220,35 @@ Regarding `#1` above, `type`, there are **6** different **Portal** types you can
 <img src="./docs/images/portal_types/text-type-white#gh-dark-mode-only" style="width: 5%;"/>
 <img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
 
-1. **text** - display text or `HTML`.
+1. **text** - display `text` or `HTML`.
 
-<img src="./docs/images/portal_types/markdown-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
-<img src="./docs/images/portal_types/markdown-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/markdown-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/markdown-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
 
 2. **markdown** - display `markdown`.
 
-<img src="./docs/images/portal_types/image-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
-<img src="./docs/images/portal_types/image-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/image-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/image-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
 
 3. **photo** - display an `image`.
 
-<img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
-<img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
 
-4. **file** - host a downloadable file.
+4. **file** - host a downloadable `file`.
 
-<img src="./docs/images/portal_types/link-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
-<img src="./docs/images/portal_types/link-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/link-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/link-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
 
-5. **link** - link to an external website or project.
+5. **link** - `link` to an external website or project.
 
-<img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
-<img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
 
 6. **custom** - use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file.
 
-<img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 5%;"/>
-<img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
 
 7. **unknown** - this is not an actual type, but a placeholder will be used if a valid type is not found above.
 
