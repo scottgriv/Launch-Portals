@@ -232,6 +232,10 @@ Regarding `#1` above, `type`, there are 5 different **Portal** types you can uti
 )
 ```
 
+> [!NOTE]
+> Each **Portal** type has an icon indicator associated with it, located in the upper left hand corner of each **Portal**.
+> You can disable this indicator by setting `showPortalIcons` to `false` in the `config.js` file if you do not want to display it.
+
 ## General Information
 
 > [!NOTE]
