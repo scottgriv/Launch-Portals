@@ -217,40 +217,16 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 Regarding `#1` above, `type`, there are **6** different **Portal** types you can utilize.
 - Place the type you want to use in `type` query parameter.
 
-<img src="./docs/images/portal_types/text-type-white.svg#gh-dark-mode-only" style="width: 2%;"/>
-<img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 2%;"/>
 
-1. **text** - display `text` or `HTML`.
-
-<img src="./docs/images/portal_types/markdown-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
-<img src="./docs/images/portal_types/markdown-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
-
-2. **markdown** - display `markdown`.
-
-<img src="./docs/images/portal_types/image-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
-<img src="./docs/images/portal_types/image-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
-
-3. **photo** - display an `image`.
-
-<img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 2%;"/>
-<img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 2%;"/>
-
-4. **file** - host a downloadable `file`.
-
-<img src="./docs/images/portal_types/link-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
-<img src="./docs/images/portal_types/link-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
-
-5. **link** - `link` to an external website or project.
-
-<img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
-<img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
-
-6. **custom** - use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file.
-
-<img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
-<img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
-
-7. **unknown** - this is not an actual type, but a placeholder will be used if a valid type is not found above.
+| Icon                                                                                                 | Type     | Usage |
+| ---------------------------------------------------------------------------------------------------- | -------- | ------ |
+| <img src="./docs/images/portal_types/text-type-white.svg#gh-dark-mode-only" style="width: 2%;"/><img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 2%;"/>     | text     | display `text` or `HTML` |
+| <img src="./docs/images/portal_types/markdown-type-white.svg#gh-dark-mode-only" style="width: 3%;"/><img src="./docs/images/portal_types/markdown-type-black.svg#gh-light-mode-only" style="width: 3%;"/> | markdown | display `markdown` |
+| <img src="./docs/images/portal_types/image-type-white.svg#gh-dark-mode-only" style="width: 3%;"/><img src="./docs/images/portal_types/image-type-black.svg#gh-light-mode-only" style="width: 3%;"/>    | image    | display an `image` |
+| <img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 2%;"/><img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 2%;"/>     | file     | host a downloadable `file` |
+| <img src="./docs/images/portal_types/link-type-white.svg#gh-dark-mode-only" style="width: 3%;"/><img src="./docs/images/portal_types/link-type-black.svg#gh-light-mode-only" style="width: 3%;"/>     | link     | `link` to an external website or project |
+| <img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 3%;"/><img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 3%;"/>   | custom   | use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file. |
+| <img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 3%;"/><img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 3%;"/>  | unknown  | this is not an actual type, but a placeholder will be used if a valid type is not found above. |
 
 > [!WARNING] 
 > Be sure to add the **keyword** you used inside of the **custom** tag above inside the `switch` statement.
