@@ -217,8 +217,8 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 Regarding `#1` above, `type`, there are **6** different **Portal** types you can utilize.
 - Place the type you want to use in `type` query parameter.
 
-<img src="./docs/images/portal_types/text-type-white#gh-dark-mode-only" style="width: 5%;"/>
-<img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 5%;"/>
+<img src="./docs/images/portal_types/text-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
 
 1. **text** - display `text` or `HTML`.
 
@@ -232,8 +232,8 @@ Regarding `#1` above, `type`, there are **6** different **Portal** types you can
 
 3. **photo** - display an `image`.
 
-<img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 3%;"/>
-<img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 3%;"/>
+<img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 2%;"/>
+<img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 2%;"/>
 
 4. **file** - host a downloadable `file`.
 
