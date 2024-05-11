@@ -48,6 +48,7 @@ Feel free to Fork this repo and make it your own. Add **Portal** cards with text
     <i>Error handling if content cannot be rendered.</i>
 </div>
 <br>
+
 ---------------
 
 ## Table of Contents
@@ -237,7 +238,6 @@ Regarding `#1` above, `type`, there are 5 different **Portal** types you can uti
 > I used [Microlink API](https://microlink.io/) to pull the `meta` tags from my websites into structured data to be displayed in each **Portal**.
 > Because the free tier is subject to a soft limit of [50 unauthenticated requests a day](https://microlink.io/docs/api/basics/rate-limit), I decided to use Netlify functions to cache the data server side. If you're testing on local, I cache it in the browser. So be sure to set `localTesting` to `true` if you're developing on your local, otherwise it should be set to `false` for Netlify depoloyment. 
 
-
 ## Closing
 
 Thank you for taking the time to read through this document and I hope you find it useful!
@@ -279,6 +279,8 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 - [Meta Tags](https://metatags.io/) - A tool for previewing and generating meta tags for better SEO and social media sharing.
 - [Microlink API](https://microlink.io/) - An API for turning websites into structured data.
 - [Microlink API - Rate Limits](https://microlink.io/docs/api/basics/rate-limit) - Documentation on the usage limits of the Microlink API.
+- [Meta Tags: What They Are & How to Use Them for SEO](https://www.semrush.com/blog/meta-tag/) - Meta Tag for SEO Guide.
+- [SEO Basics: How to Do SEO for Beginners](https://www.semrush.com/blog/seo-basics) - Search Engine Optimization Guide.
 
 ## License
 
