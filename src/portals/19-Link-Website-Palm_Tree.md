@@ -1,5 +1,5 @@
 ---
 type: link
 order: 19
-link: https://github.com/scottgriv/Palm-Tree
+link: https://scottgriv.github.io/Palm-Tree/
 ---
