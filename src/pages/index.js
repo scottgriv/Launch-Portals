@@ -68,7 +68,7 @@ const IndexPage = () => {
 }
 
 export const Head = () => (
-  <Seo title="Launch Portals" description="🚀 Portals for launching a showcase of your best work." />
+  <Seo title="Launch Portals" description="🚀 Portals for launching a showcase of your best work! View your websites Open Graph meta tags to ensure your projects are being displayed properly, demonstrate your portfolio, and much more." />
 )
 
 export default IndexPage;
