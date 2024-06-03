@@ -22,7 +22,7 @@
     <a href="https://app.netlify.com/sites/launchportals/deploys"><img src="https://api.netlify.com/api/v1/badges/07aa0dfe-8942-4e78-8eb6-c18d491a3c59/deploy-status" alt="Netlify Status" /></a>
 </p>
 
-Launch Portals is a dynamic web application designed for developers, marketers, and project managers to showcase and monitor their digital projects. This tool not only provides quick links to projects, repositories, websites, apps, and social media pages but also crucially displays and verifies the metadata of each link. 
+Launch Portals is a dynamic web application designed for developers, marketers, and project managers to showcase and monitor their digital projects. This tool not only provides quick links to projects, repositories, websites, apps, and social media pages but also crucially displays and verifies the metadata of each link for SEO optimization. 
 
 Users can easily ensure that their projects are presented correctly across platforms by checking Open Graph tags and other metadata in real-time. Whether you're launching a new app or managing an existing portfolio, Launch Portals helps you maintain control over how your projects appear to the world, enhancing visibility and consistency across the web.
 
