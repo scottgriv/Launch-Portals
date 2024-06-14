@@ -14,7 +14,7 @@
     <a href="https://prgportfolio.com"><img src="https://img.shields.io/badge/PRG-Gold Project-FFD700?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMjYuMDAwMDAwcHQiIGhlaWdodD0iMzQuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAyNi4wMDAwMDAgMzQuMDAwMDAwIgogcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+Cgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwzNC4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9IiNGRkQ3MDAiIHN0cm9rZT0ibm9uZSI+CjxwYXRoIGQ9Ik0xMiAzMjggYy04IC04IC0xMiAtNTEgLTEyIC0xMzUgMCAtMTA5IDIgLTEyNSAxOSAtMTQwIDQyIC0zOCA0OAotNDIgNTkgLTMxIDcgNyAxNyA2IDMxIC0xIDEzIC03IDIxIC04IDIxIC0yIDAgNiAyOCAxMSA2MyAxMyBsNjIgMyAwIDE1MCAwCjE1MCAtMTE1IDMgYy04MSAyIC0xMTkgLTEgLTEyOCAtMTB6IG0xMDIgLTc0IGMtNiAtMzMgLTUgLTM2IDE3IC0zMiAxOCAyIDIzCjggMjEgMjUgLTMgMjQgMTUgNDAgMzAgMjUgMTQgLTE0IC0xNyAtNTkgLTQ4IC02NiAtMjAgLTUgLTIzIC0xMSAtMTggLTMyIDYKLTIxIDMgLTI1IC0xMSAtMjIgLTE2IDIgLTE4IDEzIC0xOCA2NiAxIDc3IDAgNzIgMTggNzIgMTMgMCAxNSAtNyA5IC0zNnoKbTExNiAtMTY5IGMwIC0yMyAtMyAtMjUgLTQ5IC0yNSAtNDAgMCAtNTAgMyAtNTQgMjAgLTMgMTQgLTE0IDIwIC0zMiAyMCAtMTgKMCAtMjkgLTYgLTMyIC0yMCAtNyAtMjUgLTIzIC0yNiAtMjMgLTIgMCAyOSA4IDMyIDEwMiAzMiA4NyAwIDg4IDAgODggLTI1eiIvPgo8L2c+Cjwvc3ZnPgo=" alt="Gold" /></a>
 </p>
 
----------------
+---
 
 <h1 align="center">🚀 Launch Portals 🚀</h1>
 
@@ -22,7 +22,7 @@
     <a href="https://app.netlify.com/sites/launchportals/deploys"><img src="https://api.netlify.com/api/v1/badges/07aa0dfe-8942-4e78-8eb6-c18d491a3c59/deploy-status" alt="Netlify Status" /></a>
 </p>
 
-Launch Portals is a dynamic web application designed for developers, marketers, and project managers to showcase and monitor their digital projects. This tool not only provides quick links to projects, repositories, websites, apps, and social media pages but also crucially displays and verifies the metadata of each link for SEO optimization. 
+Launch Portals is a dynamic web application designed for developers, marketers, and project managers to showcase and monitor their digital projects. This tool not only provides quick links to projects, repositories, websites, apps, and social media pages but also crucially displays and verifies the metadata of each link for SEO optimization.
 
 Users can easily ensure that their projects are presented correctly across platforms by checking Open Graph tags and other metadata in real-time. Whether you're launching a new app or managing an existing portfolio, Launch Portals helps you maintain control over how your projects appear to the world, enhancing visibility and consistency across the web.
 
@@ -49,21 +49,21 @@ Feel free to Fork this repo and make it your own. Add **Portal** cards with plai
 </div>
 <br>
 
----------------
+---
 
 ## Table of Contents
 
 - [Features](#features)
 - [Background Story](#background-story)
 - [Getting Started](#getting-started)
-    - [Installation & Set Up](#installation--set-up)
-    - [Building and Running for Production](#building-and-running-for-production)
-    - [Configuration](#configuration)
-    - [Customization](#customization)
+  - [Installation & Set Up](#installation--set-up)
+  - [Building and Running for Production](#building-and-running-for-production)
+  - [Configuration](#configuration)
+  - [Customization](#customization)
 - [Portals](#portals)
-    - [What's a Portal?](#whats-a-portal)
-    - [Portal Setup](#portal-setup)
-    - [Portal Types](#portal-types)
+  - [What's a Portal?](#whats-a-portal)
+  - [Portal Config](#portal-config)
+  - [Portal Types](#portal-types)
 - [Closing](#closing)
 - [What's Next?](#whats-next)
 - [Project](#project)
@@ -115,7 +115,7 @@ I wanted to create a website that showcased my projects without adding my produc
 
    ```sh
     gatsby serve
-    ```
+   ```
 
 3. View the website at `http://localhost:9000`
 4. Commit to GitHub
@@ -131,19 +131,20 @@ I wanted to create a website that showcased my projects without adding my produc
 
 You can easily configure this website to your liking by following the steps below, changing it from a full website to a preview landing page for your product or app:
 
-1. Open the `src/components/config.js` file
-2. Update the `config` object with your information
+1.  Open the `src/components/config.js` file
+2.  Update the `config` object with your information
 
-    ```js
-    export const CONFIG = {
-        localTesting: false, // Set to true to use Netlify's Server Caching
-        showPortalIcons: true, // Set to true to show the Portal type icon in the upper left hand corner of the portal
-    };
+        ```js
+        export const CONFIG = {
+            localTesting: false, // Set to true to use Netlify's Server Caching
+            showPortalIcons: true, // Set to true to show the Portal type icon in the upper left hand corner of the portal
+        };
 
-    ```
-> [!NOTE]
-> I used [Microlink API](https://microlink.io/) to pull the `meta` tags from my websites into structured data to be displayed in each **Portal**.
-> Because the free tier is subject to a soft limit of [50 unauthenticated requests a day](https://microlink.io/docs/api/basics/rate-limit), I decided to use Netlify functions to cache the data server side. If you're testing on local, I cache it in the browser. So be sure to set `localTesting` to `true` if you're developing on your local, otherwise it should be set to `false` for Netlify depoloyment. 
+        ```
+
+    > [!NOTE]
+    > I used [Microlink API](https://microlink.io/) to pull the `meta` tags from my websites into structured data to be displayed in each **Portal**.
+    > Because the free tier is subject to a soft limit of [50 unauthenticated requests a day](https://microlink.io/docs/api/basics/rate-limit), I decided to use Netlify functions to cache the data server side. If you're testing on local, I cache it in the browser. So be sure to set `localTesting` to `true` if you're developing on your local, otherwise it should be set to `false` for Netlify depoloyment.
 
 ### Customization
 
@@ -162,8 +163,8 @@ Below is a list of the main files you can customize to your liking:
 11. `static/files` - place your files for your **file** portal types here.
 12. `static/images` - place your images for your **photo** portal types here.
 13. `netlify/functions/fetchMetadata.js` - server side function for requesting site metadata using [Microlink API](https://microlink.io/).
-13. `netlify.toml` - used to setup the Netlify directory above for the server side.
-14. In the root directory, you can also edit the `gatsby-config.js` file to change the site metadata, colors, titles, and other information.
+14. `netlify.toml` - used to setup the Netlify directory above for the server side.
+15. In the root directory, you can also edit the `gatsby-config.js` file to change the site metadata, colors, titles, and other information.
 
 ## Portals
 
@@ -173,28 +174,20 @@ A **Portal** is what I refer to as a dynamic card that goes inside the overall *
 There are a few different types of **Portals** you can utilize out of the box, more on that below.
 
 Inside the `src/portals` directory, you can add `markdown` files with information about each of your portals.
+
 - I like to name the file using the following naming convention:
-- `A-B-C-D.md`
-        - `A` = Portal Order
-        - `B` = Portal Type
-        - `C` = Project Type
-        - `D` = Project Name
-- Examples:
-        - `1-Photo-Banner.md`
-        - `9-Custom-Clock.md`
-        - `10-File-Resume.md`
-        - `11-Markdown-Example.md`
-        - `32-Link-Social-GitHub.md`
+- `A-B-C-D.md` - `A` = Portal Order - `B` = Portal Type - `C` = Project Type - `D` = Project Name
+- Examples: - `1-Photo-Banner.md` - `9-Custom-Clock.md` - `10-File-Resume.md` - `11-Markdown-Example.md` - `32-Link-Social-GitHub.md`
 
 > [!TIP]
-> This naming convention is of course optional, the application does not care what the name of the files are, just that its a `.md` extension and that its properly formatted to pick up your **Portal** information.
+> This naming convention is of course optional, the application does not care what the name of the files are, just that its a `.md` extension and that its properly formatted to pick up your **Portal** information (following [Portal Config](#portal-config) below).
 
 Add as many **Portals** you like and the application will loop through this folder to display each one.
 
-### Portal Setup
+### Portal Config
 
 Utilize the following query parameters for `GraphQL` to render your **Portal** content.
-     
+
 1. `type: String` - see the breakdown of [Portal Types](#portal-types) below.
 2. `order: Int` - this is the order you want your **Portals** to appear in the overall **Launch Portals** grid.
 3. `text: String` - text used for `text` **Portal** types, this also supports `HTML` formatting/tags.
@@ -204,8 +197,21 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 7. `fileTitle : String` - the title you would like to use to display your `file` **Portal** type.
 8. `link: String` - put your url path (external) to your website you would like to display using a `link` **Portal** type.
 9. `custom: String` - use a keyword here to describe your `custom` **Portal** type. You will need to adjust the logic in the `src/components/PortalGrid.js` file to handle this.
-10. `vportals: Int` - adjust how many **Portals** your single **Portal** will expand *vertically*. 
-11. `hportals: Int` - adjust how many **Portals** your single **Portal** will expand *horizontally*.
+10. `vportals: Int` - adjust how many **Portals** your single **Portal** will expand _vertically_.
+11. `hportals: Int` - adjust how many **Portals** your single **Portal** will expand _horizontally_.
+
+- Example:
+  `
+
+---
+
+type: link
+order: 43
+link: https://www.buymeacoffee.com/scottgriv
+
+---
+
+`
 
 > [!IMPORTANT]
 > Regarding `vportals` above, there is no limit on how many **Portals** your content can take up, but keep in mind, it may give off a strange appearance if you're crossing too many **Portals** at once so you may need to tinker around with it.
@@ -215,20 +221,20 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 ### Portal Types
 
 Regarding `#1` above, `type`, there are **6** different **Portal** types you can utilize.
+
 - Place the type you want to use in `type` query parameter.
 
+| Icon                                                                                                                                                                                                        | Type     | Usage                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="./docs/images/portal_types/text-type-white.svg#gh-dark-mode-only" style="width: 9%;"/><img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 9%;"/>           | text     | display `text` or `HTML`                                                                                                                                         |
+| <img src="./docs/images/portal_types/markdown-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/markdown-type-black.svg#gh-light-mode-only" style="width: 10%;"/> | markdown | display `markdown`                                                                                                                                               |
+| <img src="./docs/images/portal_types/image-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/image-type-black.svg#gh-light-mode-only" style="width: 10%;"/>       | image    | display an `image`                                                                                                                                               |
+| <img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 9%;"/><img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 9%;"/>           | file     | host a downloadable `file`                                                                                                                                       |
+| <img src="./docs/images/portal_types/link-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/link-type-black.svg#gh-light-mode-only" style="width: 10%;"/>         | link     | `link` to an external website or project                                                                                                                         |
+| <img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 10%;"/>     | custom   | use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file. |
+| <img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 10%;"/>   | unknown  | this is not an actual type, but a placeholder will be used if a valid type is not found above.                                                                   |
 
-| Icon                                                                                                 | Type     | Usage |
-| ---------------------------------------------------------------------------------------------------- | -------- | ------ |
-| <img src="./docs/images/portal_types/text-type-white.svg#gh-dark-mode-only" style="width: 9%;"/><img src="./docs/images/portal_types/text-type-black.svg#gh-light-mode-only" style="width: 9%;"/>     | text     | display `text` or `HTML` |
-| <img src="./docs/images/portal_types/markdown-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/markdown-type-black.svg#gh-light-mode-only" style="width: 10%;"/> | markdown | display `markdown` |
-| <img src="./docs/images/portal_types/image-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/image-type-black.svg#gh-light-mode-only" style="width: 10%;"/>    | image    | display an `image` |
-| <img src="./docs/images/portal_types/file-type-white.svg#gh-dark-mode-only" style="width: 9%;"/><img src="./docs/images/portal_types/file-type-black.svg#gh-light-mode-only" style="width: 9%;"/>     | file     | host a downloadable `file` |
-| <img src="./docs/images/portal_types/link-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/link-type-black.svg#gh-light-mode-only" style="width: 10%;"/>     | link     | `link` to an external website or project |
-| <img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 10%;"/>   | custom   | use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file. |
-| <img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 10%;"/>  | unknown  | this is not an actual type, but a placeholder will be used if a valid type is not found above. |
-
-> [!WARNING] 
+> [!WARNING]
 > Be sure to add the **keyword** you used inside of the **custom** tag above inside the `switch` statement.
 > Example:
 
@@ -248,11 +254,13 @@ Regarding `#1` above, `type`, there are **6** different **Portal** types you can
 
 Thank you for taking the time to read through this document and I hope you find it useful!
 If you have any questions or suggestions, please feel free to reach out to me.
+
 > Please reference the [SUPPORT](.github/SUPPORT.md) file in this repository for more details
 
 ## What's Next?
 
 I'm looking forward to seeing how this project evolves over time and how it can help others with their GitHub Portfolio.
+
 > Please reference the [CHANGELOG](.github/CHANGELOG.md) file in this repository for more details.
 
 ## Project
@@ -294,6 +302,7 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 ## License
 
 This project is released under the terms of the **GNU General Public License, version 3 (GNU GPLv3)**, which ensures that derivatives of the software remain open source.
+
 - The [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) is a "copyleft" license, ensuring that derivatives of the software remain open source and under the GPL.
 - For more details and to understand all requirements and conditions, see the [LICENSE](LICENSE) file in this repository.
 
@@ -304,7 +313,7 @@ This project is released under the terms of the **GNU General Public License, ve
 **Website:** [scottgrivner.dev](https://www.scottgrivner.dev) <br>
 **Reference:** [Main Branch](https://github.com/scottgriv/Launch-Portals) <br>
 
----------------
+---
 
 <div align="center">
     <a href="https://github.com/scottgriv/Launch-Portals" target="_blank">
