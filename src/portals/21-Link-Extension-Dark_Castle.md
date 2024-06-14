@@ -1,5 +1,5 @@
 ---
-type: photo
+type: link
 order: 21
-photo: '/images/icon_cs.png'
+link: https://marketplace.visualstudio.com/items?itemName=scottgriv.Dark-Castle
 ---

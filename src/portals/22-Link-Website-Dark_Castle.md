@@ -1,5 +1,5 @@
 ---
-type: photo
+type: link
 order: 22
-photo: '/images/icon_cs.png'
+link: https://darkcastle.netlify.app/
 ---
