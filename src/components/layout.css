@@ -356,11 +356,24 @@ pre tt:after {
   color: var(--scroll-arrow-color)
 }
 
+#pagefoot {
+  font-size: 0.8em; /* Adjust the font size to make it smaller */
+  color: #FFFFFF; /* Font color */
+  text-align: center; /* Center the text */
+  margin: 0 auto;
+  max-width: 1200px; /* Maximum width for the content */
+  padding: 15px; /* Padding on the sides for responsiveness */
+}
+
 @media only screen and (max-width: 600px) {
   .scroll-to-top {
     width: 50px; /* Set width and height to be the same for a circle */
     height: 50px;
     bottom: 35px; /* Closer to the bottom on small screens */
     right: 35px; /* Closer to the right on small screens */
+  }
+
+  #pagefoot {
+    font-size: 10px;
   }
 }

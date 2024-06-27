@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import PortalGrid from "../components/PortalGrid"; // Adjust the path based on your file structure
-import Seo from "../components/seo"; // Ensure this path is correct
+import PortalGrid from "../components/PortalGrid" // Adjust the path based on your file structure
+import Seo from "../components/seo" // Ensure this path is correct
 
 const IndexPage = () => {
   const [showScroll, setShowScroll] = useState(false)
@@ -17,7 +17,6 @@ const IndexPage = () => {
 
         // Prevent parallax effect when 'over-scrolling' happens.
         scrolled = Math.max(0, Math.min(scrolled, maxScroll))
-
 
         setShowScroll(scrolled > 500)
 
@@ -56,19 +55,26 @@ const IndexPage = () => {
       <main>
         <PortalGrid />
       </main>
-        <button
-          onClick={scrollTop}
-          className={`scroll-to-top ${showScroll ? "visible" : ""}`}
-          aria-label="Scroll to top"
-        >
-          <i className="fa-solid fa-arrow-up fa-flip"></i>
-        </button>
+      <div id="pagefoot">
+        Copyright © 2024-{new Date().getFullYear()} Scott Grivner - All
+        Rights Reserved.
+      </div>
+      <button
+        onClick={scrollTop}
+        className={`scroll-to-top ${showScroll ? "visible" : ""}`}
+        aria-label="Scroll to top"
+      >
+        <i className="fa-solid fa-arrow-up fa-flip"></i>
+      </button>
     </>
   )
 }
 
 export const Head = () => (
-  <Seo title="Launch Portals" description="🚀 Portals for launching a showcase of your best work! View your websites Open Graph meta tags to ensure your projects are being displayed properly via SEO, demonstrate your portfolio, and much more." />
+  <Seo
+    title="Launch Portals"
+    description="🚀 Portals for launching a showcase of your best work! View your websites Open Graph meta tags to ensure your projects are being displayed properly via SEO, demonstrate your portfolio, and much more."
+  />
 )
 
-export default IndexPage;
+export default IndexPage
