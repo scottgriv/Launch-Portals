@@ -1,5 +1,5 @@
 ---
 type: link
-order: 30
+order: 31
 link: https://scottgriv.github.io/rust-wasm_game_of_life/
 ---

@@ -1,5 +1,5 @@
 ---
 type: link
-order: 38
+order: 39
 link: https://medium.com/@scottgrivner
 ---

@@ -1,5 +1,5 @@
 ---
 type: link
-order: 39
+order: 40
 link: https://www.goodreads.com/scottgrivner
 ---
