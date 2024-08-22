@@ -237,6 +237,32 @@ pre tt:after {
   margin-bottom: 20px;
 }
 
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #040624; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FA6400; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+  border: 3px solid #040624; /* Padding around scrollbar thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #FA6400 #040624; /* Thumb and track colors */
+}
+
+/* For Internet Explorer and Edge */
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 @media (max-width: 600px) {
   .loading-text {
       font-size: 16px;
