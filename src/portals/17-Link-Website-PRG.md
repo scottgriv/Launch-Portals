@@ -1,5 +1,5 @@
 ---
 type: link
 order: 17
-link: https://prgoptimized.netlify.app/
+link: https://prgoptimized.netlify.app
 ---
