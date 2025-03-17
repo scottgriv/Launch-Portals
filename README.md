@@ -22,11 +22,11 @@
     <a href="https://app.netlify.com/sites/launchportals/deploys"><img src="https://api.netlify.com/api/v1/badges/07aa0dfe-8942-4e78-8eb6-c18d491a3c59/deploy-status" alt="Netlify Status" /></a>
 </p>
 
-Launch Portals is a dynamic web application designed for developers, marketers, and project managers to showcase and monitor their digital projects. This tool not only provides quick links to projects, repositories, websites, apps, and social media pages but also crucially displays and verifies the metadata of each link for SEO optimization.
+**Launch Portals** is a dynamic web app for developers, marketers, and project managers to showcase and track digital projects. It provides quick links to projects, repositories, websites, apps, and social media while verifying metadata for **SEO optimization**.
 
-Users can easily ensure that their projects are presented correctly across platforms by checking Open Graph tags and other metadata in real-time. Whether you're launching a new app or managing an existing portfolio, Launch Portals helps you maintain control over how your projects appear to the world, enhancing visibility and consistency across the web.
+Easily check **Open Graph tags** and ensure consistent project presentation across platforms. Whether launching a new app or managing an existing portfolio, **Launch Portals keeps your work visible and well-organized**.
 
-Feel free to Fork this repo and make it your own. Add **Portal** cards with plaintext (and/or HTML), markdown, photos, files, or links to your work. Expand the columns how you see fit, vertically and horizontally. The sky is the limit with Launch Portals!
+Fork the repo and customize your **Portal Cards** with text, markdown, images, files, or links. Expand columns as needed—the sky isn't even the limit with **Launch Portals**!
 
 - Visit the application to see it in action [here](https://https://launchportals.netlify.app/).
 
