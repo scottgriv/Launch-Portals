@@ -23,8 +23,8 @@ module.exports = {
         name: `Launch Portals`,
         short_name: `Launch Portals`,
         start_url: `/`,
-        background_color: `#FA6400`,
-        theme_color: `#FA6400`,
+        background_color: `#040624`,
+        theme_color: `#040624`,
         icon: `src/images/icon.png`, // Ensure this path is correct.
         display: `standalone`,
       },

@@ -1,7 +1,7 @@
 /* Global color variables */
 :root {
   --main-bg-color: #000000; /* Main background color */
-  --main-bg-color-alt: #110C77; /* Alternative main background color */
+  --main-bg-color-alt: #040624; /* Alternative main background color */
   --accent-color: #1da9c2; /* Portal borders and accents OR 27c4c4 */
   --portal-background-color: #1f1f1f; /* Portal background color */
   --portal-icon-color: #000000; /* Icon for the Portal type in the upper left hand corner of each portal */
