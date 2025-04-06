@@ -134,13 +134,12 @@ You can easily configure this website to your liking by following the steps belo
 1.  Open the `src/components/config.js` file
 2.  Update the `config` object with your information
 
-        ```js
-        export const CONFIG = {
-            localTesting: false, // Set to true to use Netlify's Server Caching
-            showPortalIcons: true, // Set to true to show the Portal type icon in the upper left hand corner of the portal
-        };
-
-        ```
+    ```js
+    export const CONFIG = {
+        localTesting: false, // Set to true to use Netlify's Server Caching
+        showPortalIcons: true, // Set to true to show the Portal type icon in the upper left hand corner of the portal
+    };
+    ```
 
 > [!NOTE]
 > I used [Microlink API](https://microlink.io/) to pull the `meta` tags from my websites into structured data to be displayed in each **Portal**.
@@ -206,6 +205,8 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 type: link
 order: 43
 link: https://www.buymeacoffee.com/scottgriv
+vportals: 1
+hportals: 2
 ---
 ```
 
@@ -236,7 +237,6 @@ Regarding `#1` above, `type`, there are **6** different **Portal** types you can
 
 > [!WARNING]
 > If you utilize as `custom` type, make sure to add the **keyword** for the **custom** tag inside the following `switch` statement so that it's handled properly.
-> Example:
 
 ```js
 {node.frontmatter.custom === "animation" ? (
