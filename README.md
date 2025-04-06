@@ -142,9 +142,9 @@ You can easily configure this website to your liking by following the steps belo
 
         ```
 
-    > [!NOTE]
-    > I used [Microlink API](https://microlink.io/) to pull the `meta` tags from my websites into structured data to be displayed in each **Portal**.
-    > Because the free tier is subject to a soft limit of [50 unauthenticated requests a day](https://microlink.io/docs/api/basics/rate-limit), I decided to use Netlify functions to cache the data server side. If you're testing on local, I cache it in the browser. So be sure to set `localTesting` to `true` if you're developing on your local, otherwise it should be set to `false` for Netlify depoloyment.
+> [!NOTE]
+> I used [Microlink API](https://microlink.io/) to pull the `meta` tags from my websites into structured data to be displayed in each **Portal**.
+> Because the free tier is subject to a soft limit of [50 unauthenticated requests a day](https://microlink.io/docs/api/basics/rate-limit), I decided to use Netlify functions to cache the data server side. If you're testing on local, I cache it in the browser. So be sure to set `localTesting` to `true` if you're developing on your local, otherwise it should be set to `false` for Netlify depoloyment.
 
 ### Customization
 
@@ -201,17 +201,13 @@ Utilize the following query parameters for `GraphQL` to render your **Portal** c
 11. `hportals: Int` - adjust how many **Portals** your single **Portal** will expand _horizontally_.
 
 - Example:
-  `
-
+```
 ---
-
 type: link
 order: 43
 link: https://www.buymeacoffee.com/scottgriv
-
 ---
-
-`
+```
 
 > [!IMPORTANT]
 > Regarding `vportals` above, there is no limit on how many **Portals** your content can take up, but keep in mind, it may give off a strange appearance if you're crossing too many **Portals** at once so you may need to tinker around with it.
@@ -234,8 +230,12 @@ Regarding `#1` above, `type`, there are **6** different **Portal** types you can
 | <img src="./docs/images/portal_types/custom-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/custom-type-black.svg#gh-light-mode-only" style="width: 10%;"/>     | custom   | use a **keyword** here to use inside the `custom` `switch` statement logic in the `renderPortalContent` function inside the `src/components/PortalGrid.js` file. |
 | <img src="./docs/images/portal_types/unknown-type-white.svg#gh-dark-mode-only" style="width: 10%;"/><img src="./docs/images/portal_types/unknown-type-black.svg#gh-light-mode-only" style="width: 10%;"/>   | unknown  | this is not an actual type, but a placeholder will be used if a valid type is not found above.                                                                   |
 
+> [!NOTE]
+> Each **Portal** type has an icon indicator associated with it, located in the upper left hand corner of each **Portal**.
+> You can disable this indicator by setting `showPortalIcons` to `false` in the `config.js` file if you do not want to display it.
+
 > [!WARNING]
-> Be sure to add the **keyword** you used inside of the **custom** tag above inside the `switch` statement.
+> If you utilize as `custom` type, make sure to add the **keyword** for the **custom** tag inside the following `switch` statement so that it's handled properly.
 > Example:
 
 ```js
@@ -245,10 +245,6 @@ Regarding `#1` above, `type`, there are **6** different **Portal** types you can
 <ClockWidget />
 )
 ```
-
-> [!NOTE]
-> Each **Portal** type has an icon indicator associated with it, located in the upper left hand corner of each **Portal**.
-> You can disable this indicator by setting `showPortalIcons` to `false` in the `config.js` file if you do not want to display it.
 
 ## Closing
 
