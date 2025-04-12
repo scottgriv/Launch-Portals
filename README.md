@@ -154,7 +154,7 @@ Below is a list of the main files you can customize to your liking:
 3. `src/components/PortalGrid.js` - the main driving logic of the website.
 4. `src/components/layout.css` - the main `CSS` file of the website.
 5. `src/components/seo.js` - contains the site SEO. You can easily customize the SEO by editing the `siteMetadata` tree.
-6. `src/images` - directory contains the `icon.png` used for the site favicon and other places a small icon is needed.
+6. `src/images` - directory contains the `home-icon.png` used for the site favicon and other places a small icon is needed.
 7. `src/pages/index.js` - site index file.
 8. `src/portals` - place your portals here, each `markdown` file will be a card/block inside the overall grid.
 9. `src/styles/global.css` - global `CSS` styles, adjust the color and font in this file for overall customization to fit your needs.

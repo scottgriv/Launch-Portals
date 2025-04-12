@@ -25,8 +25,9 @@ module.exports = {
         start_url: `/`,
         background_color: `#040624`,
         theme_color: `#040624`,
-        icon: `src/images/icon.png`, // Ensure this path is correct.
+        icon: `src/images/home-icon.png`, // Ensure this path is correct.
         display: `standalone`,
+        include_favicon: false,
       },
     },
     // Add other plugins here as needed.
