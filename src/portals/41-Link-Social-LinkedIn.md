@@ -1,5 +1,5 @@
 ---
 type: link
-order: 39
+order: 41
 link: https://www.linkedin.com/in/scottgrivner/
 ---

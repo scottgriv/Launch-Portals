@@ -1,7 +1,7 @@
 ---
 type: link
 order: 25
-link: https://www.scottgrivner.dev
+link: https://nightowllabs.io
 vportals: 1
 hportals: 2
 ---
