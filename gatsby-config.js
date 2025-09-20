@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Launch Portals`,
     description: `A portal for launching a showcase of your best work.`,
-    author: `@scottgrivner`, // Update with your information
-    siteUrl: `https://scottgrivner.dev`, // Update with your site URL
+    author: `@scottgriv`, // Update with your information
+    siteUrl: `https://linktr.ee/scottgriv`, // Update with your site URL
   },
   plugins: [
     `gatsby-plugin-image`,

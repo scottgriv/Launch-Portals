@@ -1,5 +1,5 @@
 ---
-type: photo
+type: link
 order: 13
-photo: '/images/icon_cs.png'
+link: https://apps.apple.com/app/id6450848695
 ---
