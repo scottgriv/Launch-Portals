@@ -272,9 +272,9 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 - How to contribute:
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/Business-Website`)
+2. Create your Feature Branch (`git checkout -b feature/Launch-Portals`)
 3. Commit your Changes (`git commit -m 'Add new feature'`)
-4. Push to the Branch (`git push origin feature/Business-Website`)
+4. Push to the Branch (`git push origin feature/Launch-Portals`)
 5. Open a Pull Request
 
 > Please reference the [CONTRIBUTING](.github/CONTRIBUTING.md) file in this repository for more details.
