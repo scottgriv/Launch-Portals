@@ -1,5 +1,5 @@
 ---
 type: link
 order: 24
-link: https://darkcastle.netlify.app/
+link: https://darkcastletheme.com
 ---
